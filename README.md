@@ -71,7 +71,8 @@ Acurácia: 0.8044692737430168
    macro avg       0.80      0.78      0.79       179
 weighted avg       0.80      0.80      0.80       179
 
-  ![Gráfico de acurácias](outputs/acc_comparison.png)
+![Gráfico de acurácias](https://raw.githubusercontent.com/laurastj/Atividade_ia/main/outputs/acc_comparison.png)
+
 
 ---
 
