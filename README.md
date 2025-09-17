@@ -38,22 +38,48 @@ Métricas reportadas: Acurácia, Matriz de Confusão, Precision, Recall e F1-sco
 ---
 
 ## Principais resultados
-- (Copie e cole aqui os valores das métricas que saíram no seu notebook, ex. `Logistic Regression — acurácia: 0.79, F1: 0.75`)
-- Inserir gráfico comparativo:
+- == Decision Tree ==
+Acurácia: 0.8044692737430168
+              precision    recall  f1-score   support
+
+           0       0.83      0.86      0.84       110
+           1       0.77      0.71      0.74        69
+
+    accuracy                           0.80       179
+   macro avg       0.80      0.79      0.79       179
+weighted avg       0.80      0.80      0.80       179
+
+== KNN ==
+Acurácia: 0.8212290502793296
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86       110
+           1       0.81      0.70      0.75        69
+
+    accuracy                           0.82       179
+   macro avg       0.82      0.80      0.81       179
+weighted avg       0.82      0.82      0.82       179
+
+== Logistic Regression ==
+Acurácia: 0.8044692737430168
+              precision    recall  f1-score   support
+
+           0       0.81      0.89      0.85       110
+           1       0.79      0.67      0.72        69
+
+    accuracy                           0.80       179
+   macro avg       0.80      0.78      0.79       179
+weighted avg       0.80      0.80      0.80       179
+
   ![Gráfico de acurácias](outputs/acc_comparison.png)
 
 ---
 
 ## Conclusões e recomendações
 - Principais features: `Sex`, `Pclass`, `Age`
-- Melhorias sugeridas: feature engineering (`FamilySize`), balanceamento de classes (SMOTE), tuning (GridSearchCV), testar RandomForest/XGBoost.
+- Melhoria sugerida: feature engineering (FamilySize = SibSp + Parch + 1).
 
 ---
 
 ## ▶ Como rodar
 1. Abrir `notebooks/tarefa2.ipynb` no Google Colab (File → Upload notebook) ou no Jupyter local.
-2. Se local: criar virtualenv e instalar packages:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
